@@ -1,0 +1,13 @@
+.cat-facts{
+    text-align: left;
+}
+
+.cat-facts h1{
+    margin-left: 10px;
+}
+
+.cat-facts ol li {
+    margin: 20px;
+    padding-bottom: 40px;
+    position: relative;
+}
