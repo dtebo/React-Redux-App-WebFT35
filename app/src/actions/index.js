@@ -9,7 +9,8 @@ export const fetchCatData = (url) => (dispatch) => {
 
     axios.get(url)
         .then(res => {
-            dispatch({ type: FETCH_CATDATA_SUCCESS, payload: res.data });
+            console.log('fetchCatData: DT: ', res.data.all);
+            dispatch({ type: FETCH_CATDATA_SUCCESS, payload: res.data.all });
         })
         .catch(err => console.error(err));
 };
