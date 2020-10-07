@@ -9,7 +9,10 @@ const CatData = props => {
             <h1>Cat Facts</h1>
             <ol>
                 {props.catData.map(item => (
-                    <li>{item.text}</li>
+                    <li>
+                        <img src="https://img.icons8.com/fluent/15/000000/cat.png"/>
+                        {item.text}
+                    </li>
                 ))}
             </ol>
         </div>
